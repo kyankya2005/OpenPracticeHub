@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Learning Hub - Master Git & GitHub | OpenPracticeHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .learning-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .learning-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .learning-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .card-description {
+            margin-bottom: 20px;
+            color: #666;
+            text-align: center;
+        }
+
+        .card-topics {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .card-topics li {
+            padding: 5px 0;
+            color: #555;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .card-topics li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .learning-path {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+
+        .learning-path h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .path-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .path-step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .step-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #4ECDC4, #44A08D);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .path-steps {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-btn">← Back to Home</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📚 Learning Hub - Master Git & GitHub</h1>
+            <p>New to GitHub? Start here! Our comprehensive learning materials will take you from complete beginner to confident contributor.</p>
+        </div>
+
+        <div class="learning-grid">
+            <div class="learning-card">
+                <div class="card-icon">🌱</div>
+                <h3 class="card-title">Git Basics</h3>
+                <p class="card-description">Learn Git fundamentals - commits, branches, merging, and more. Perfect for absolute beginners!</p>
+                <ul class="card-topics">
+                    <li>Commits</li>
+                    <li>Branches</li>
+                    <li>Merging</li>
+                </ul>
+                <a href="git-basics.html" class="btn">Start Learning</a>
+            </div>
+
+            <div class="learning-card">
+                <div class="card-icon">🔄</div>
+                <h3 class="card-title">Pull Requests</h3>
+                <p class="card-description">Master the art of creating and managing pull requests. From forking to merging!</p>
+                <ul class="card-topics">
+                    <li>Forking</li>
+                    <li>Creating PRs</li>
+                    <li>Code Review</li>
+                </ul>
+                <a href="pull-requests-basics.html" class="btn">Learn PRs</a>
+            </div>
+
+            <div class="learning-card">
+                <div class="card-icon">🚀</div>
+                <h3 class="card-title">GitHub Workflow</h3>
+                <p class="card-description">Complete GitHub collaboration workflow. Clone, branch, commit, push, and merge!</p>
+                <ul class="card-topics">
+                    <li>Clone & Fork</li>
+                    <li>Branch Strategy</li>
+                    <li>Sync Changes</li>
+                </ul>
+                <a href="github-workflow.html" class="btn">Master Workflow</a>
+            </div>
+
+            <div class="learning-card">
+                <div class="card-icon">💪</div>
+                <h3 class="card-title">Practice Exercises</h3>
+                <p class="card-description">Hands-on exercises from beginner to advanced. Build real skills with guided practice!</p>
+                <ul class="card-topics">
+                    <li>30-Day Challenge</li>
+                    <li>Real Projects</li>
+                    <li>Achievement Badges</li>
+                </ul>
+                <a href="practice-exercises.html" class="btn">Practice Now</a>
+            </div>
+        </div>
+
+        <!-- Learning Path moved to main page - guides page focuses on individual guides -->
+
+        <div class="cta-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join thousands of developers who have mastered Git and GitHub through our comprehensive learning materials.</p>
+            <div class="cta-buttons">
+                <a href="git-basics.html" class="btn btn-primary">Start with Git Basics</a>
+                <a href="/" class="btn btn-secondary">Back to Projects</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

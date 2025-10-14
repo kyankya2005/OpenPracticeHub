@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Workflow for Beginners - OpenPracticeHub</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .guide-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .guide-content h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .guide-content h2 {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .guide-content h3 {
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .guide-content code {
+            background-color: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .guide-content pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .guide-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: #2980b9;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+        .practice-box {
+            background-color: #e8f6f3;
+            border-left: 4px solid #27ae60;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .tip-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-content">
+        <a href="../" class="back-link">← Back to Main Site</a>
+        <a href="./" class="back-link" style="margin-left: 1rem;">← Back to All Guides</a>
+        
+        <h1><span class="emoji">🌐</span> GitHub Workflow for Beginners</h1>
+        
+        <p>This guide teaches you the complete workflow for contributing to projects on GitHub - from forking to getting your PR merged!</p>
+
+        <h2><span class="emoji">🎯</span> The Complete Workflow</h2>
+        
+        <p>Think of GitHub workflow like this:</p>
+        <ol>
+            <li><strong>Fork</strong> = Make your own copy</li>
+            <li><strong>Clone</strong> = Download to your computer</li>
+            <li><strong>Branch</strong> = Create a workspace</li>
+            <li><strong>Commit</strong> = Save your work</li>
+            <li><strong>Push</strong> = Upload your changes</li>
+            <li><strong>PR</strong> = Request to merge your changes</li>
+            <li><strong>Merge</strong> = Your changes become part of the main project! <span class="emoji">🎉</span></li>
+        </ol>
+
+        <h2><span class="emoji">🚀</span> Step-by-Step Workflow</h2>
+
+        <h3><span class="emoji">🍴</span> Step 1: Fork the Repository</h3>
+        <p><strong>What it does:</strong> Creates your own copy of the project</p>
+        <p><strong>How to do it:</strong></p>
+        <ol>
+            <li>Go to the project page on GitHub</li>
+            <li>Click the "Fork" button (top right)</li>
+            <li>Wait a few seconds</li>
+            <li>Done! You now have your own copy at <code>github.com/YOUR-USERNAME/project-name</code></li>
+        </ol>
+
+        <h3><span class="emoji">💻</span> Step 2: Clone to Your Computer</h3>
+        <p><strong>What it does:</strong> Downloads your fork to work locally</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git clone https://github.com/YOUR-USERNAME/OpenPracticeHub.git
+cd OpenPracticeHub</code></pre>
+
+        <h3><span class="emoji">🔗</span> Step 3: Set Up the Original as "Upstream"</h3>
+        <p><strong>What it does:</strong> Lets you get updates from the original project</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git remote add upstream https://github.com/ratul345/OpenPracticeHub.git
+git remote -v  # Check that it worked</code></pre>
+
+        <h3><span class="emoji">🌿</span> Step 4: Create a Branch</h3>
+        <p><strong>What it does:</strong> Creates a separate workspace for your changes</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git checkout -b my-feature-name</code></pre>
+        
+        <p><strong>Branch naming examples:</strong></p>
+        <ul>
+            <li><code>fix-typo-in-readme</code></li>
+            <li><code>add-quote-about-learning</code></li>
+            <li><code>improve-button-styling</code></li>
+            <li><code>make-mobile-friendly</code></li>
+        </ul>
+
+        <h3><span class="emoji">✨</span> Step 5: Make Your Changes</h3>
+        <p><strong>What it does:</strong> The fun part - actually improving the project!</p>
+        <p><strong>Ideas for OpenPracticeHub:</strong></p>
+        <ul>
+            <li>Fix a typo</li>
+            <li>Add a quote to quotes.json</li>
+            <li>Improve CSS styling</li>
+            <li>Add a new feature</li>
+            <li>Make something mobile-friendly</li>
+        </ul>
+
+        <h3><span class="emoji">📦</span> Step 6: Stage Your Changes</h3>
+        <p><strong>What it does:</strong> Tells Git which changes to save</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git add filename.txt    # Add specific file
+git add .              # Add everything (most common!)</code></pre>
+
+        <h3><span class="emoji">💾</span> Step 7: Commit Your Changes</h3>
+        <p><strong>What it does:</strong> Saves your changes with a description</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git commit -m "Add inspiring quote about learning to code"</code></pre>
+        
+        <div class="tip-box">
+            <p><strong>Good commit messages:</strong></p>
+            <ul>
+                <li>✅ "Fix typo in README.md"</li>
+                <li>✅ "Add motivational quote about perseverance"</li>
+                <li>✅ "Improve button hover animation"</li>
+                <li>❌ "Update" (too vague!)</li>
+                <li>❌ "Fix" (what did you fix?)</li>
+            </ul>
+        </div>
+
+        <h3><span class="emoji">🚀</span> Step 8: Push to Your Fork</h3>
+        <p><strong>What it does:</strong> Uploads your changes to your GitHub fork</p>
+        <p><strong>How to do it:</strong></p>
+        <pre><code>git push origin my-feature-name</code></pre>
+
+        <h3><span class="emoji">🎯</span> Step 9: Create a Pull Request</h3>
+        <p><strong>What it does:</strong> Asks the project maintainer to review your changes</p>
+        <p><strong>How to do it:</strong></p>
+        <ol>
+            <li>Go to your fork on GitHub</li>
+            <li>You'll see a "Compare & pull request" button - click it!</li>
+            <li>Write a clear title and description</li>
+            <li>Submit the PR!</li>
+        </ol>
+
+        <h3><span class="emoji">💬</span> Step 10: Respond to Feedback</h3>
+        <p><strong>What it does:</strong> Shows you're a good collaborator</p>
+        <p><strong>How to do it:</strong></p>
+        <ul>
+            <li>Check your PR regularly for comments</li>
+            <li>Be friendly and open to suggestions</li>
+            <li>Make requested changes if needed</li>
+            <li>Push new commits to the same branch</li>
+        </ul>
+
+        <h2><span class="emoji">🔃</span> Keeping Your Fork Updated</h2>
+        
+        <p>Before starting new work, always update your fork:</p>
+        
+        <pre><code>git checkout main              # Switch to main branch
+git fetch upstream             # Get updates from original
+git merge upstream/main        # Apply updates to your fork
+git push origin main           # Update your GitHub fork</code></pre>
+
+        <h2><span class="emoji">🎨</span> Common Workflow Patterns</h2>
+
+        <h3>Pattern 1: Quick Fix</h3>
+        <pre><code>git checkout main
+git pull upstream main
+git checkout -b fix-typo
+echo "Fixed!" >> README.md
+git add .
+git commit -m "Fix typo in README"
+git push origin fix-typo
+# Create PR on GitHub</code></pre>
+
+        <h3>Pattern 2: Feature Development</h3>
+        <pre><code>git checkout main
+git pull upstream main
+git checkout -b add-cool-feature
+# Work on your feature...
+git add .
+git commit -m "Add cool feature"
+git push origin add-cool-feature
+# Create PR on GitHub</code></pre>
+
+        <h2><span class="emoji">🆘</span> Common Workflow Problems</h2>
+
+        <div class="warning-box">
+            <h3>"My fork is out of sync!"</h3>
+            <pre><code>git checkout main
+git fetch upstream
+git reset --hard upstream/main
+git push origin main --force</code></pre>
+        </div>
+
+        <div class="warning-box">
+            <h3>"I committed to the wrong branch!"</h3>
+            <pre><code>git checkout correct-branch
+git cherry-pick COMMIT-HASH
+git checkout wrong-branch
+git reset --hard HEAD~1</code></pre>
+        </div>
+
+        <div class="warning-box">
+            <h3>"I want to start over!"</h3>
+            <pre><code>git checkout main
+git branch -D my-branch-name  # Delete branch locally
+git push origin --delete my-branch-name  # Delete on GitHub</code></pre>
+        </div>
+
+        <div class="practice-box">
+            <h2><span class="emoji">🎯</span> Practice Workflow Exercise</h2>
+            
+            <p>Let's practice the complete workflow:</p>
+            
+            <ol>
+                <li><strong>Fork</strong> OpenPracticeHub</li>
+                <li><strong>Clone</strong> your fork</li>
+                <li><strong>Create branch</strong>: <code>git checkout -b practice-workflow</code></li>
+                <li><strong>Make change</strong>: Add your name to a file</li>
+                <li><strong>Stage</strong>: <code>git add .</code></li>
+                <li><strong>Commit</strong>: <code>git commit -m "Add my name to contributors"</code></li>
+                <li><strong>Push</strong>: <code>git push origin practice-workflow</code></li>
+                <li><strong>Create PR</strong> on GitHub</li>
+                <li><strong>Celebrate</strong> - you just completed the full workflow! <span class="emoji">🎉</span></li>
+            </ol>
+        </div>
+
+        <h2><span class="emoji">🚀</span> Pro Tips</h2>
+        
+        <ul>
+            <li><strong>Commit often</strong>: Small commits are easier to review</li>
+            <li><strong>Write good messages</strong>: Help reviewers understand your changes</li>
+            <li><strong>Test before committing</strong>: Make sure your changes work</li>
+            <li><strong>Be patient</strong>: Reviews take time - maintainers are volunteers</li>
+            <li><strong>Stay friendly</strong>: Open source is about collaboration, not competition</li>
+        </ul>
+
+        <h2><span class="emoji">🎉</span> What's Next?</h2>
+        
+        <p>You've mastered the GitHub workflow! Now you can:</p>
+        <ul>
+            <li>Contribute to any open-source project</li>
+            <li>Help other beginners learn</li>
+            <li>Build your portfolio with real contributions</li>
+            <li>Become part of the open-source community</li>
+        </ul>
+
+        <p><strong>Ready to practice?</strong> Try the <a href="practice-exercises.html">practice exercises</a> or start contributing to OpenPracticeHub! <span class="emoji">🌟</span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull Requests for Beginners - OpenPracticeHub</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .guide-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .guide-content h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .guide-content h2 {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .guide-content h3 {
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .guide-content code {
+            background-color: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .guide-content pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .guide-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: #2980b9;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+        .practice-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .tip-box {
+            background-color: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .step-box {
+            background-color: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .command-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .command {
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            border-left: 3px solid #3498db;
+        }
+        .command-desc {
+            padding: 0.5rem;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-content">
+        <a href="../" class="back-link">← Back to Main Site</a>
+        <a href="./" class="back-link" style="margin-left: 1rem;">← Back to All Guides</a>
+        
+        <h1><span class="emoji">🔀</span> Pull Requests for Beginners</h1>
+        
+        <p>Pull Requests (PRs) are how you suggest changes to projects on GitHub. Think of them as "Hey, I made some improvements - want to take a look?"</p>
+
+        <h2><span class="emoji">🎯</span> What is a Pull Request?</h2>
+        
+        <p>A Pull Request is like saying: "I made some changes in my copy of your project. Please review them and maybe add them to the main project!"</p>
+
+        <h2><span class="emoji">🚀</span> The PR Process (Step by Step!)</h2>
+
+        <div class="step-box">
+            <h3><span class="emoji">🍴</span> Step 1: Fork the Repository</h3>
+            <p>Click the "Fork" button on the main project page. This creates your own copy to work on.</p>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">💻</span> Step 2: Clone Your Fork</h3>
+            <pre><code>git clone https://github.com/YOUR-USERNAME/OpenPracticeHub.git
+cd OpenPracticeHub</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">🌿</span> Step 3: Create a New Branch</h3>
+            <pre><code>git checkout -b my-awesome-change</code></pre>
+            
+            <h4>Branch naming tips:</h4>
+            <ul>
+                <li>Use descriptive names: <code>fix-typo-in-readme</code>, <code>add-new-quote</code>, <code>improve-button-color</code></li>
+                <li>Use hyphens, not spaces</li>
+                <li>Keep it short but clear</li>
+            </ul>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">✨</span> Step 4: Make Your Changes</h3>
+            <p>Edit files, add features, fix bugs - whatever you want to improve!</p>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">💾</span> Step 5: Commit Your Changes</h3>
+            <pre><code>git add .
+git commit -m "Add inspiring quote about learning"</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">🚀</span> Step 6: Push to Your Fork</h3>
+            <pre><code>git push origin my-awesome-change</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h3><span class="emoji">🎉</span> Step 7: Create the Pull Request</h3>
+            <p>Go to GitHub and click "Compare & pull request" button!</p>
+        </div>
+
+        <h2><span class="emoji">📝</span> Writing a Great PR Title</h2>
+        
+        <div class="tip-box">
+            <h4><span class="emoji">✅</span> Good titles:</h4>
+            <ul>
+                <li>"Add inspiring quote about perseverance"</li>
+                <li>"Fix typo in README.md"</li>
+                <li>"Improve mobile responsiveness"</li>
+            </ul>
+            
+            <h4><span class="emoji">❌</span> Bad titles:</h4>
+            <ul>
+                <li>"Update"</li>
+                <li>"Changes"</li>
+                <li>"Fix"</li>
+            </ul>
+        </div>
+
+        <h2><span class="emoji">💬</span> Writing a Great PR Description</h2>
+        
+        <p>Use this template:</p>
+        
+        <pre><code>## What I Added/Fixed
+Briefly describe your changes
+
+## Why This Change
+Explain why this makes the project better
+
+## How to Test
+Simple steps to see your changes in action
+
+## First Contribution! 🎉
+This is my first open-source contribution. Thank you for creating this safe space to learn!</code></pre>
+
+        <h2><span class="emoji">🎯</span> PR Best Practices</h2>
+        
+        <div class="tip-box">
+            <h4><span class="emoji">✅</span> Do:</h4>
+            <ul>
+                <li><strong>Keep changes small</strong> - one idea per PR</li>
+                <li><strong>Test your changes</strong> before submitting</li>
+                <li><strong>Be friendly</strong> in your description</li>
+                <li><strong>Ask questions</strong> if unsure</li>
+                <li><strong>Celebrate</strong> - you're contributing to open source!</li>
+            </ul>
+            
+            <h4><span class="emoji">❌</span> Don't:</h4>
+            <ul>
+                <li><strong>Mix different changes</strong> in one PR</li>
+                <li><strong>Submit broken code</strong> (test first!)</li>
+                <li><strong>Get discouraged</strong> if asked to make changes</li>
+                <li><strong>Spam</strong> - make meaningful improvements only</li>
+            </ul>
+        </div>
+
+        <h2><span class="emoji">🎨</span> Common PR Types</h2>
+        
+        <h3><span class="emoji">🌟</span> Easy Wins (Perfect for Beginners!)</h3>
+        <ul>
+            <li><strong>Fix typos</strong>: <code>git commit -m "Fix typo in README"</code></li>
+            <li><strong>Add quotes</strong>: <code>git commit -m "Add quote about learning"</code></li>
+            <li><strong>Improve styling</strong>: <code>git commit -m "Improve button hover effect"</code></li>
+        </ul>
+        
+        <h3><span class="emoji">🚀</span> Medium Effort</h3>
+        <ul>
+            <li><strong>Add features</strong>: <code>git commit -m "Add dark mode toggle"</code></li>
+            <li><strong>Improve performance</strong>: <code>git commit -m "Optimize image loading"</code></li>
+            <li><strong>Add accessibility</strong>: <code>git commit -m "Add alt text to images"</code></li>
+        </ul>
+
+        <div class="practice-box">
+            <h2><span class="emoji">🔥</span> Practice Exercises</h2>
+            
+            <ol>
+                <li><strong>Fork this repository</strong> (OpenPracticeHub)</li>
+                <li><strong>Create a branch</strong>: <code>git checkout -b add-my-quote</code></li>
+                <li><strong>Add a quote</strong> to <code>projects/random-quotes/quotes.json</code></li>
+                <li><strong>Commit</strong>: <code>git commit -m "Add motivational quote"</code></li>
+                <li><strong>Push</strong>: <code>git push origin add-my-quote</code></li>
+                <li><strong>Create PR</strong> on GitHub!</li>
+            </ol>
+        </div>
+
+        <div class="warning-box">
+            <h2><span class="emoji">🆘</span> What if Something Goes Wrong?</h2>
+            
+            <h3><span class="emoji">🔄</span> "I created the PR but want to change something!"</h3>
+            <p>Just push more commits to the same branch - they'll appear in your PR automatically!</p>
+            
+            <h3><span class="emoji">🔄</span> "I want to start over!"</h3>
+            <p>Close the PR on GitHub and delete your branch:</p>
+            <pre><code>git checkout main
+git branch -d my-awesome-change</code></pre>
+            
+            <h3><span class="emoji">❓</span> "My PR was rejected!"</h3>
+            <p>That's normal! Ask what needs improvement and try again. Learning from feedback is how you grow! <span class="emoji">💪</span></p>
+        </div>
+
+        <div class="tip-box">
+            <h2><span class="emoji">🎉</span> Celebrate Your Contribution!</h2>
+            
+            <p>Every PR is an achievement! You've just:</p>
+            <ul>
+                <li><strong>✅ Learned Git workflow</strong></li>
+                <li><strong>✅ Contributed to open source</strong></li>
+                <li><strong>✅ Built your portfolio</strong></li>
+                <li><strong>✅ Helped a real project</strong></li>
+            </ul>
+            
+            <p><strong>Welcome to the open-source community!</strong> <span class="emoji">🚀</span></p>
+        </div>
+
+        <hr>
+        
+        <p><strong>Next:</strong> Learn about <a href="github-workflow.html">GitHub workflow</a> or try <a href="practice-exercises.html">practice exercises</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercises - OpenPracticeHub</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .guide-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .guide-content h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .guide-content h2 {
+            color: #34495e;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .guide-content h3 {
+            color: #2c3e50;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .guide-content code {
+            background-color: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .guide-content pre {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .guide-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            color: #c0392b;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+        .exercise-box {
+            background-color: #fdf2e9;
+            border-left: 4px solid #e67e22;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .tip-box {
+            background-color: #eafaf1;
+            border-left: 4px solid #27ae60;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background-color: #fdf2f2;
+            border-left: 4px solid #e74c3c;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .challenge-box {
+            background-color: #f0f8ff;
+            border-left: 4px solid #3498db;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .command-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .command {
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            border-left: 3px solid #e67e22;
+        }
+        .command-desc {
+            padding: 0.5rem;
+            color: #495057;
+        }
+        .skills-checklist {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .skills-checklist ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-checklist li {
+            padding: 0.3rem 0;
+        }
+        .skills-checklist input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-content">
+        <a href="../" class="back-link">← Back to Main Site</a>
+        <a href="./" class="back-link" style="margin-left: 1rem;">← Back to All Guides</a>
+        
+        <h1><span class="emoji">🎯</span> Practice Exercises</h1>
+        
+        <p>Ready to practice your Git and GitHub skills? These exercises will help you master the workflow while making meaningful contributions to OpenPracticeHub!</p>
+
+        <h2><span class="emoji">🌟</span> Beginner Exercises (Start Here!)</h2>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">🎉</span> Exercise 1: Your First Contribution</h3>
+            <p><strong>Goal:</strong> Make your very first open-source contribution</p>
+            <p><strong>Time:</strong> 5-10 minutes</p>
+            <p><strong>Skills:</strong> Basic Git workflow, PR creation</p>
+            
+            <h4>Steps:</h4>
+            <ol>
+                <li>Fork OpenPracticeHub</li>
+                <li>Clone your fork</li>
+                <li>Create branch: <code>git checkout -b add-my-first-quote</code></li>
+                <li>Open <code>projects/random-quotes/quotes.json</code></li>
+                <li>Add your favorite motivational quote:</li>
+            </ol>
+            
+            <pre><code>{
+  "text": "Your favorite quote here",
+  "author": "Author name"
+}</code></pre>
+            
+            <ol start="6">
+                <li>Save the file</li>
+                <li>Stage: <code>git add .</code></li>
+                <li>Commit: <code>git commit -m "Add motivational quote by [Author]"</code></li>
+                <li>Push: <code>git push origin add-my-first-quote</code></li>
+                <li>Create PR on GitHub!</li>
+            </ol>
+            
+            <p><strong>What you learned:</strong> Basic Git workflow, JSON editing, PR creation</p>
+        </div>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">🔍</span> Exercise 2: Fix a Typo</h3>
+            <p><strong>Goal:</strong> Practice finding and fixing small issues</p>
+            <p><strong>Time:</strong> 3-5 minutes</p>
+            <p><strong>Skills:</strong> File editing, committing</p>
+            
+            <h4>Steps:</h4>
+            <ol>
+                <li>Read through the README.md file</li>
+                <li>Look for any typos or grammar issues</li>
+                <li>Create branch: <code>git checkout -b fix-typo</code></li>
+                <li>Fix the typo(s)</li>
+                <li>Commit: <code>git commit -m "Fix typo in README"</code></li>
+                <li>Push and create PR!</li>
+            </ol>
+            
+            <p><strong>What you learned:</strong> Attention to detail, quick fixes, documentation improvement</p>
+        </div>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">🎨</span> Exercise 3: Improve Styling</h3>
+            <p><strong>Goal:</strong> Make visual improvements to the website</p>
+            <p><strong>Time:</strong> 10-15 minutes</p>
+            <p><strong>Skills:</strong> CSS, design thinking</p>
+            
+            <h4>Ideas to try:</h4>
+            <ul>
+                <li>Change button colors in <code>styles.css</code></li>
+                <li>Add hover effects to project cards</li>
+                <li>Improve spacing or fonts</li>
+                <li>Add animations</li>
+                <li>Make something mobile-friendly</li>
+            </ul>
+            
+            <p><strong>Branch name:</strong> <code>improve-styling</code></p>
+            <p><strong>Commit message:</strong> <code>Improve [specific thing] styling</code></p>
+            
+            <p><strong>What you learned:</strong> CSS skills, visual design, responsive design</p>
+        </div>
+
+        <h2><span class="emoji">🚀</span> Intermediate Exercises</h2>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">🆕</span> Exercise 4: Add a New Feature</h3>
+            <p><strong>Goal:</strong> Build something new from scratch</p>
+            <p><strong>Time:</strong> 20-30 minutes</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript, problem-solving</p>
+            
+            <h4>Feature ideas:</h4>
+            <ul>
+                <li><strong>Dark mode toggle:</strong> Add a button to switch between light/dark themes</li>
+                <li><strong>Search functionality:</strong> Let users search through projects</li>
+                <li><strong>Back-to-top button:</strong> Smooth scroll to top</li>
+                <li><strong>Loading animations:</strong> Make waiting feel better</li>
+                <li><strong>Social sharing buttons:</strong> Share projects on social media</li>
+            </ul>
+            
+            <h4>Steps:</h4>
+            <ol>
+                <li>Plan your feature (what will it do?)</li>
+                <li>Create branch: <code>git checkout -b add-[feature-name]</code></li>
+                <li>Build your feature</li>
+                <li>Test it works</li>
+                <li>Commit with clear message</li>
+                <li>Push and create PR!</li>
+            </ol>
+            
+            <p><strong>What you learned:</strong> Feature development, testing, user experience</p>
+        </div>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">⚡</span> Exercise 5: Optimize Performance</h3>
+            <p><strong>Goal:</strong> Make the website faster and more efficient</p>
+            <p><strong>Time:</strong> 15-20 minutes</p>
+            <p><strong>Skills:</strong> Performance optimization, best practices</p>
+            
+            <h4>Optimization ideas:</h4>
+            <ul>
+                <li><strong>Image optimization:</strong> Compress images, use modern formats</li>
+                <li><strong>CSS cleanup:</strong> Remove unused styles, combine similar rules</li>
+                <li><strong>JavaScript improvements:</strong> Minimize code, use efficient algorithms</li>
+                <li><strong>Loading optimization:</strong> Lazy loading, resource hints</li>
+                <li><strong>Accessibility:</strong> Add alt text, improve keyboard navigation</li>
+            </ul>
+            
+            <p><strong>Branch name:</strong> <code>optimize-[specific-thing]</code></p>
+            <p><strong>Commit message:</strong> <code>Optimize [specific thing] for better performance</code></p>
+            
+            <p><strong>What you learned:</strong> Performance thinking, user experience, technical optimization</p>
+        </div>
+
+        <h2><span class="emoji">🎯</span> Advanced Exercises</h2>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">🏗️</span> Exercise 6: Create a New Project</h3>
+            <p><strong>Goal:</strong> Add a completely new practice project</p>
+            <p><strong>Time:</strong> 30-45 minutes</p>
+            <p><strong>Skills:</strong> Full-stack development, project structure</p>
+            
+            <h4>Project ideas:</h4>
+            <ul>
+                <li><strong>Calculator:</strong> Basic math operations</li>
+                <li><strong>Todo list:</strong> Add/remove tasks</li>
+                <li><strong>Weather app:</strong> Show weather for your city</li>
+                <li><strong>Quiz game:</strong> Multiple choice questions</li>
+                <li><strong>Password generator:</strong> Create secure passwords</li>
+            </ul>
+            
+            <h4>Requirements:</h4>
+            <ul>
+                <li>Create new folder in <code>projects/</code></li>
+                <li>Include <code>index.html</code>, <code>styles.css</code>, <code>script.js</code></li>
+                <li>Make it beginner-friendly</li>
+                <li>Add instructions in README</li>
+            </ul>
+            
+            <p><strong>Branch name:</strong> <code>add-[project-name]</code></p>
+            <p><strong>Commit message:</strong> <code>Add [project name] practice project</code></p>
+            
+            <p><strong>What you learned:</strong> Project planning, full-stack development, documentation</p>
+        </div>
+
+        <div class="exercise-box">
+            <h3><span class="emoji">📝</span> Exercise 7: Improve Documentation</h3>
+            <p><strong>Goal:</strong> Make the project easier for others to understand</p>
+            <p><strong>Time:</strong> 20-30 minutes</p>
+            <p><strong>Skills:</strong> Technical writing, empathy, teaching</p>
+            
+            <h4>Documentation improvements:</h4>
+            <ul>
+                <li><strong>Better README:</strong> Clearer instructions, more examples</li>
+                <li><strong>Code comments:</strong> Explain complex parts</li>
+                <li><strong>Setup guides:</strong> Step-by-step installation</li>
+                <li><strong>Troubleshooting:</strong> Common problems and solutions</li>
+                <li><strong>Video tutorials:</strong> Record your screen showing how to contribute</li>
+            </ul>
+            
+            <p><strong>Branch name:</strong> <code>improve-docs</code></p>
+            <p><strong>Commit message:</strong> <code>Improve documentation for [specific thing]</code></p>
+            
+            <p><strong>What you learned:</strong> Technical communication, teaching, empathy</p>
+        </div>
+
+        <h2><span class="emoji">🎮</span> Challenge Mode</h2>
+
+        <div class="challenge-box">
+            <h3><span class="emoji">📅</span> 30-Day Contribution Challenge</h3>
+            <p><strong>Goal:</strong> Contribute something every day for 30 days</p>
+            <p><strong>Skills:</strong> Consistency, habit building, continuous learning</p>
+            
+            <h4>Daily ideas:</h4>
+            <ul>
+                <li>Day 1: Add a quote</li>
+                <li>Day 2: Fix a typo</li>
+                <li>Day 3: Improve CSS</li>
+                <li>Day 4: Add a comment to code</li>
+                <li>Day 5: Suggest a new feature</li>
+                <li>Day 6: Help someone in issues</li>
+                <li>Day 7: Update documentation</li>
+                <li>...keep going!</li>
+            </ul>
+            
+            <p><strong>Track your progress:</strong> Keep a log of what you learned each day</p>
+        </div>
+
+        <div class="challenge-box">
+            <h3><span class="emoji">🤝</span> Collaboration Challenge</h3>
+            <p><strong>Goal:</strong> Work with other contributors on something bigger</p>
+            <p><strong>Skills:</strong> Teamwork, communication, collaboration</p>
+            
+            <h4>How to participate:</h4>
+            <ol>
+                <li>Look for issues labeled "help wanted"</li>
+                <li>Comment on issues you're interested in</li>
+                <li>Ask questions and offer help</li>
+                <li>Build on others' work</li>
+                <li>Give credit and be supportive</li>
+            </ol>
+        </div>
+
+        <h2><span class="emoji">📊</span> Track Your Progress</h2>
+        
+        <div class="skills-checklist">
+            <h3>Skills You'll Build:</h3>
+            <ul>
+                <li><input type="checkbox"> Basic Git commands</li>
+                <li><input type="checkbox"> Branch creation and switching</li>
+                <li><input type="checkbox"> Commit message writing</li>
+                <li><input type="checkbox"> Pull request creation</li>
+                <li><input type="checkbox"> Code review process</li>
+                <li><input type="checkbox"> Collaboration skills</li>
+                <li><input type="checkbox"> Problem-solving</li>
+                <li><input type="checkbox"> Technical communication</li>
+                <li><input type="checkbox"> Open source contribution</li>
+                <li><input type="checkbox"> Confidence building</li>
+            </ul>
+        </div>
+
+        <div class="tip-box">
+            <h2><span class="emoji">💡</span> Pro Tips</h2>
+            <ul>
+                <li><strong>Start small:</strong> Don't try to do everything at once</li>
+                <li><strong>Ask questions:</strong> If you're stuck, ask in the issues</li>
+                <li><strong>Be patient:</strong> Learning takes time - that's normal!</li>
+                <li><strong>Celebrate wins:</strong> Every contribution is an achievement</li>
+                <li><strong>Help others:</strong> Teaching reinforces your own learning</li>
+            </ul>
+        </div>
+
+        <hr>
+        
+        <p><strong>Remember:</strong> The goal isn't perfection - it's learning! Every mistake is a lesson, and every contribution makes you a better developer. <span class="emoji">🚀</span></p>
+    </div>
+</body>
+</html>

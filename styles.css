@@ -775,6 +775,202 @@ body {
     color: var(--text-light);
 }
 
+/* Learning Hub Section */
+.learning-hub {
+    padding: 6rem 1.5rem;
+    background: var(--bg-secondary);
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.learning-card {
+    background: var(--bg-primary);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.learning-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary);
+}
+
+.learning-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.learning-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.learning-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.learning-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.topic {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.learning-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.learning-cta h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.learning-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.path-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.path-step .step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.step-content strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.step-content small {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.path-arrow {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* New Learning Hub Styles */
+.learning-path-container {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.learning-path-container h3 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.path-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2.5rem 0;
+    align-items: center;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.benefit-item i {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    border-radius: var(--border-radius-lg);
+    margin-top: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
@@ -816,6 +1012,39 @@ body {
     
     .steps {
         grid-template-columns: 1fr;
+    }
+    
+    .learning-hub {
+        padding: 4rem 1rem;
+    }
+    
+    .learning-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .learning-card {
+        padding: 2rem;
+    }
+    
+    .learning-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .learning-path {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .path-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .path-step {
+        max-width: 200px;
     }
 }
 
