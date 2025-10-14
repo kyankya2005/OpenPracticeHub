@@ -48,7 +48,7 @@ Click the "Fork" button at the top right of this page. This creates your own cop
 
 ### Step 2: Clone to Your Computer 💻
 ```bash
-git clone https://github.com/YOUR-USERNAME/OpenPracticeHub.git
+git clone https://github.com/ratul345/OpenPracticeHub.git
 cd OpenPracticeHub
 ```
 
