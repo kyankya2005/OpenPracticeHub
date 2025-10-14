@@ -53,6 +53,11 @@ We believe that **every expert was once a beginner**. The open-source community 
    - Update CSS colors, spacing, or fonts
    - Your design eye is valuable!
 
+4. **Enhance the Main Website** 🌐
+   - Check out the main `index.html`, `styles.css`, and `main.js` files
+   - Add animations, improve mobile responsiveness, or make it prettier
+   - Work on the first thing visitors will see!
+
 ### Option 2: The Full Practice Route
 
 Ready to practice the complete GitHub workflow? Check out our detailed [Contribution Guide](#-contribution-guide) below!
@@ -61,16 +66,33 @@ Ready to practice the complete GitHub workflow? Check out our detailed [Contribu
 
 ```
 OpenPracticeHub/
-├── 📁 projects/                    # All beginner-friendly projects
-│   ├── 📁 random-quotes/         # Our main practice project
-│   │   ├── index.html            # Simple quote generator
-│   │   ├── quotes.json           # Easy to contribute - just add quotes!
-│   │   └── styles.css            # CSS styling to improve
-│   └── 📁 coming-soon/           # More projects in development
+├── 📄 index.html                 # 🆕 Main showcase website (Live demo!)
+├── 📄 styles.css                 # 🆕 Main website styling
+├── 📄 main.js                    # 🆕 Main website functionality
+├── 📁 projects/                  # All beginner-friendly projects
+│   ├── 📁 random-quotes/       # Our main practice project
+│   │   ├── index.html          # Simple quote generator
+│   │   ├── quotes.json         # Easy to contribute - just add quotes!
+│   │   └── styles.css          # CSS styling to improve
+│   └── 📁 coming-soon/         # More projects in development
 ├── 📁 guides/                     # Helpful tutorials and tips
 ├── 📁 community/                # Contributor spotlights and stories
 └── 📁 resources/                 # Learning materials and links
 ```
+
+## 🌐 Main Showcase Website
+
+We've created a beautiful main website that showcases all projects! This is your chance to work on a real website that visitors will see first.
+
+**What you can contribute:**
+- 🎨 **Improve the design** - Make it even more beautiful!
+- ✨ **Add animations** - Smooth transitions, hover effects, loading animations
+- 📱 **Enhance mobile experience** - Make it perfect on all devices
+- 🔗 **Better project showcase** - Improve how projects are displayed
+- 🎯 **Add interactive features** - Search, filters, sorting options
+- 🌈 **Creative styling** - Experiment with colors, gradients, glassmorphism
+
+**Live Demo:** The website will be live at `https://ratul345.github.io/OpenPracticeHub/` once you enable GitHub Pages!
 
 ## 🌟 Featured Project: Random Quote Generator
 
@@ -142,13 +164,18 @@ Open `projects/random-quotes/quotes.json` and add:
 }
 ```
 
+**🌐 Improve the Main Website**
+- Edit `index.html`, `styles.css`, or `main.js` in the root folder
+- Add animations, improve mobile responsiveness, or enhance the design
+- Make the showcase website even more awesome!
+
 **🐛 Fix a Typo**
 - Browse through files and fix any spelling mistakes
 - Even small fixes count as contributions!
 
 **🎨 Improve Styling**
-- Update colors in `styles.css`
-- Improve spacing or fonts
+- Update colors in any `styles.css` file (main website or projects)
+- Improve spacing, fonts, or visual effects
 - Make things look prettier!
 
 ### Step 5: Commit Your Changes 💾

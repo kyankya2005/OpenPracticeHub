@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPracticeHub - Learn GitHub Collaboration</title>
+    <meta name="description" content="A safe space for beginners to practice GitHub collaboration and open-source development">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-code-branch"></i>
+                <span>OpenPracticeHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contribute" class="nav-link">Contribute</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="https://github.com/Ratul345/OpenPracticeHub" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Welcome to <span class="gradient-text">OpenPracticeHub</span>
+            </h1>
+            <p class="hero-description">
+                A safe space for beginners to practice GitHub collaboration, 
+                learn open-source development, and build confidence through real contributions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Contributing
+                </a>
+                <a href="https://github.com/Ratul345/OpenPracticeHub" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">first-contribution.js</span>
+                </div>
+                <div class="code-content">
+                    <div class="code-line">
+                        <span class="comment">// Your first open source contribution</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="keyword">function</span> <span class="function">makeContribution</span>() {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;<span class="keyword">return</span> {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">confidence</span>: <span class="string">"gained"</span>,
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">skills</span>: <span class="string">"improved"</span>,
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">community</span>: <span class="string">"joined"</span>
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;};
+                    </div>
+                    <div class="code-line">
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <i class="fas fa-project-diagram"></i>
+                <h3 id="projects-count">1</h3>
+                <p>Practice Projects</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3 id="contributors-count">0</h3>
+                <p>Contributors</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-code"></i>
+                <h3 id="commits-count">0</h3>
+                <p>Total Commits</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-heart"></i>
+                <h3 id="stars-count">0</h3>
+                <p>GitHub Stars</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Practice Projects</h2>
+            <p class="section-description">
+                Choose a project that interests you and start contributing! Each project is designed to be beginner-friendly.
+            </p>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Contribute Section -->
+    <section id="contribute" class="contribute">
+        <div class="container">
+            <h2 class="section-title">How to Contribute</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Fork the Repository</h3>
+                    <p>Click the "Fork" button on GitHub to create your own copy</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose a Project</h3>
+                    <p>Browse our practice projects and pick one that interests you</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Make Changes</h3>
+                    <p>Add features, fix bugs, or improve documentation</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Submit Pull Request</h3>
+                    <p>Submit your changes for review and get feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About OpenPracticeHub</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        OpenPracticeHub was created to help beginners overcome the fear of making their first 
+                        open-source contribution. We believe that everyone should have a safe space to practice 
+                        GitHub collaboration without the pressure of working on critical projects.
+                    </p>
+                    <p>
+                        Our mission is to build confidence in new developers by providing real, meaningful 
+                        projects where they can learn, experiment, and grow their skills alongside a supportive community.
+                    </p>
+                    <div class="mission">
+                        <h3>🎯 Our Mission</h3>
+                        <p>
+                            "To empower every beginner to become a confident open-source contributor through 
+                            practice, learning, and community support."
+                        </p>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="community-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OpenPracticeHub</h3>
+                    <p>Making open source accessible to everyone</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#projects">Projects</a>
+                    <a href="#contribute">Contribute</a>
+                    <a href="https://github.com/Ratul345/OpenPracticeHub">GitHub</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="https://github.com/Ratul345/OpenPracticeHub/discussions">Discussions</a>
+                    <a href="https://github.com/Ratul345/OpenPracticeHub/issues">Issues</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OpenPracticeHub. Made with ❤️ for the open-source community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
