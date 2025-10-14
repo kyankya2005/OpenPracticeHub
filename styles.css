@@ -104,6 +104,176 @@ body {
     gap: 4rem;
 }
 
+/* Why Practice Here Section */
+.why-practice {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 4rem 0;
+    align-items: start;
+}
+
+.comparison-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.comparison-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.spam-way::before {
+    background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+}
+
+.practice-way::before {
+    background: linear-gradient(90deg, #4ecdc4, #44a08d);
+}
+
+.comparison-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-header i {
+    font-size: 2.5rem;
+}
+
+.spam-way .card-header i {
+    color: #ff6b6b;
+}
+
+.practice-way .card-header i {
+    color: #4ecdc4;
+}
+
+.card-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.comparison-list li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-list li:last-child {
+    border-bottom: none;
+}
+
+.card-footer {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.spam-way .card-footer {
+    color: #ff6b6b;
+}
+
+.practice-way .card-footer {
+    color: #4ecdc4;
+}
+
+.practice-cta {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 20px;
+    color: white;
+}
+
+.practice-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.practice-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .comparison-card {
+        padding: 2rem;
+    }
+}
+
+.hero-alert {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.hero-alert i {
+    font-size: 1.3rem;
+    animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
 .hero-content {
     flex: 1;
     max-width: 600px;
@@ -454,6 +624,65 @@ body {
 /* About Section */
 .about {
     padding: 6rem 1.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonials-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.testimonial-quote::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--primary);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    opacity: 0.3;
+}
+
+.testimonial-author {
+    text-align: right;
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .about-content {

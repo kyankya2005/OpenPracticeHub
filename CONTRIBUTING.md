@@ -8,6 +8,28 @@ Welcome! We're thrilled you want to contribute! This guide will walk you through
 
 **Feeling nervous?** That's totally normal! This is your safe space to practice. Every expert was once a beginner, and we're here to support you every step of the way. 💖
 
+## 🚫 Stop Spamming, Start Learning!
+
+**Are you here to make fake PRs?** Let's be honest - we've all been tempted to make meaningless contributions just to get that "green square" on GitHub. But here's the thing: **spam PRs hurt real projects and real people.**
+
+**Instead of spamming real projects, practice here!** 🎯
+
+### The Problem with Spam PRs:
+- ❌ **Annoys maintainers** who spend time reviewing junk
+- ❌ **Wastes everyone's time** - yours and theirs
+- ❌ **Hurts your reputation** - people notice patterns
+- ❌ **Gets you blocked** from contributing to real projects
+- ❌ **Teaches you nothing** - you're not actually learning
+
+### The Smart Way to Learn:
+- ✅ **Practice here first** - make real, meaningful improvements
+- ✅ **Learn proper Git workflow** - branching, committing, PRs
+- ✅ **Build actual skills** - coding, design, collaboration
+- ✅ **Get helpful feedback** - we actually review and help improve
+- ✅ **Create a real portfolio** - meaningful contributions you can show off
+
+**Bottom line:** Use OpenPracticeHub to learn properly, then contribute meaningfully to real projects. Everyone wins! 🚀
+
 ## 🚀 Quick Start (5 minutes!)
 
 1. **Fork this repository** (click the "Fork" button)
@@ -19,6 +41,8 @@ Welcome! We're thrilled you want to contribute! This guide will walk you through
 That's it! You've just contributed to open source!
 
 ## 💡 What Can I Contribute?
+
+**Important:** All contributions here should be **meaningful improvements** - not fake changes for GitHub stats. We're building real skills, not gaming the system!
 
 ### Super Easy (No coding needed!) 🌈
 - ✅ **Fix typos** anywhere you find them
@@ -90,6 +114,8 @@ Then go to GitHub and click "Compare & pull request"!
 ## 📝 Pull Request Guidelines
 
 **Keep it simple!** We love small, focused contributions:
+
+**IMPORTANT:** This is NOT a place for fake PRs or meaningless changes. Every contribution should make the project genuinely better!
 
 1. **One change per PR** - don't mix different fixes
 2. **Write clear titles** - "Add inspiring quote about coding"
