@@ -1,0 +1,129 @@
+{
+  "quotes": [
+    {
+      "text": "The only way to learn programming is by programming.",
+      "author": "Dennis Ritchie",
+      "category": "learning"
+    },
+    {
+      "text": "First, solve the problem. Then, write the code.",
+      "author": "John Johnson",
+      "category": "problem-solving"
+    },
+    {
+      "text": "Experience is the name everyone gives to their mistakes.",
+      "author": "Oscar Wilde",
+      "category": "experience"
+    },
+    {
+      "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+      "author": "Chinese Proverb",
+      "category": "motivation"
+    },
+    {
+      "text": "Code is like humor. When you have to explain it, it's bad.",
+      "author": "Cory House",
+      "category": "humor"
+    },
+    {
+      "text": "Programming is not about typing, it's about thinking.",
+      "author": "Rich Hickey",
+      "category": "thinking"
+    },
+    {
+      "text": "The most damaging phrase in the language is: 'It's always been done that way.'",
+      "author": "Grace Hopper",
+      "category": "innovation"
+    },
+    {
+      "text": "Simplicity is the soul of efficiency.",
+      "author": "Austin Freeman",
+      "category": "simplicity"
+    },
+    {
+      "text": "The best code is no code at all.",
+      "author": "Jeff Atwood",
+      "category": "simplicity"
+    },
+    {
+      "text": "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.",
+      "author": "Patrick McKenzie",
+      "category": "growth"
+    },
+    {
+      "text": "Don't be afraid to ask questions. The dumbest question is the one you don't ask.",
+      "author": "Unknown",
+      "category": "learning"
+    },
+    {
+      "text": "The only stupid question is the one you don't ask.",
+      "author": "Unknown",
+      "category": "learning"
+    },
+    {
+      "text": "Learning to code is learning to create and solve puzzles.",
+      "author": "Unknown",
+      "category": "learning"
+    },
+    {
+      "text": "A good programmer is someone who always looks both ways before crossing a one-way street.",
+      "author": "Doug Linder",
+      "category": "humor"
+    },
+    {
+      "text": "The best way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "category": "motivation"
+    },
+    {
+      "text": "Don't watch the clock; do what it does. Keep going.",
+      "author": "Sam Levenson",
+      "category": "persistence"
+    },
+    {
+      "text": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Eleanor Roosevelt",
+      "category": "dreams"
+    },
+    {
+      "text": "It does not matter how slowly you go as long as you do not stop.",
+      "author": "Confucius",
+      "category": "persistence"
+    },
+    {
+      "text": "Everything you've ever wanted is on the other side of fear.",
+      "author": "George Addair",
+      "category": "courage"
+    },
+    {
+      "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "category": "courage"
+    },
+    {
+      "text": "The only impossible journey is the one you never begin.",
+      "author": "Tony Robbins",
+      "category": "beginning"
+    },
+    {
+      "text": "In the middle of difficulty lies opportunity.",
+      "author": "Albert Einstein",
+      "category": "opportunity"
+    },
+    {
+      "text": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "category": "belief"
+    },
+    {
+      "text": "The only person you are destined to become is the person you decide to be.",
+      "author": "Ralph Waldo Emerson",
+      "category": "destiny"
+    },
+    {
+      "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+      "author": "Henry David Thoreau",
+      "category": "dreams"
+    }
+  ]
+}

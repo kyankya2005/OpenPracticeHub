@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator - OpenPracticeHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="title">
+            <i class="fas fa-quote-left"></i>
+            Random Quote Generator
+          </h1>
+          <p class="subtitle">Inspiring quotes for your coding journey</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="quote-container" id="quoteContainer">
+          <div class="quote-card">
+            <div class="quote-text" id="quoteText">
+              Click the button below to get inspired!
+            </div>
+            <div class="quote-author" id="quoteAuthor"></div>
+            <div class="quote-category" id="quoteCategory">
+              <span class="category-badge">Ready to start</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="newQuoteBtn">
+            <i class="fas fa-refresh"></i>
+            New Quote
+          </button>
+          <button class="btn btn-secondary" id="copyBtn">
+            <i class="fas fa-copy"></i>
+            Copy Quote
+          </button>
+          <button class="btn btn-tertiary" id="shareBtn">
+            <i class="fas fa-share"></i>
+            Share
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-number" id="quotesShown">0</span>
+            <span class="stat-label">Quotes Seen</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" id="totalQuotes">0</span>
+            <span class="stat-label">Total Quotes</span>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="contribution-cta">
+            <h3>🌟 Want to contribute?</h3>
+            <p>Add your favorite quotes to help inspire others!</p>
+            <a
+              href="https://github.com/YOUR-USERNAME/OpenPracticeHub"
+              target="_blank"
+              class="btn btn-github"
+            >
+              <i class="fab fa-github"></i>
+              Contribute on GitHub
+            </a>
+          </div>
+          <div class="made-with">
+            Made with ❤️ by the OpenPracticeHub community
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast">
+      <span id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
