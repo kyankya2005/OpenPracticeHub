@@ -108,8 +108,8 @@ Think of forking like making your own personal copy of this project to work on:
 Now let's get your forked copy onto your computer:
 
 ```bash
-# Copy your fork's URL (it should look like: https://github.com/YOUR-USERNAME/OpenPracticeHub)
-git clone https://github.com/YOUR-USERNAME/OpenPracticeHub.git
+# Copy your fork's URL (it should look like: https://github.com/Ratul345/OpenPracticeHub)
+git clone https://github.com/Ratul345/OpenPracticeHub.git
 cd OpenPracticeHub
 ```
 
@@ -216,7 +216,7 @@ You did it! 🌟 Whether your PR gets merged immediately or needs some tweaks, y
 **Don't worry - everyone needs help sometimes!** Here are some resources:
 
 - 📖 Check our `guides/` folder for detailed tutorials
-- 💬 Ask questions in our [Discussions](https://github.com/YOUR-USERNAME/OpenPracticeHub/discussions)
+- 💬 Ask questions in our [Discussions](https://github.com/Ratul345/OpenPracticeHub/discussions)
 - 🔍 Search existing issues to see if others had similar questions
 - 🆕 Create a new issue if you're stuck - we're here to help!
 
@@ -245,7 +245,7 @@ In a world where technology can feel intimidating, we're building a community wh
 
 **Your journey into open source begins with a single click.** 
 
-[**🚀 Make Your First Contribution Now!**](https://github.com/YOUR-USERNAME/OpenPracticeHub/fork)
+[**🚀 Make Your First Contribution Now!**](https://github.com/Ratul345/OpenPracticeHub/fork)
 
 *Remember: Every expert was once a beginner. Every contribution matters. You've got this!* ✨
 
