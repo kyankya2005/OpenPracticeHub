@@ -92,7 +92,7 @@ We've created a beautiful main website that showcases all projects! This is your
 - 🎯 **Add interactive features** - Search, filters, sorting options
 - 🌈 **Creative styling** - Experiment with colors, gradients, glassmorphism
 
-**Live Demo:** The website will be live at `https://ratul345.github.io/OpenPracticeHub/` once you enable GitHub Pages!
+**Live Demo:** Want to see it live? Enable GitHub Pages in your repo settings, then visit `https://ratul345.github.io/OpenPracticeHub/`
 
 ## 🌟 Featured Project: Random Quote Generator
 
